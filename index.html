@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin and Student System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin and Student System</h1>
+    <div id="auth-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <div id="auth-result"></div>
+    </div>
+
+    <div id="admin-section" style="display:none;">
+      <h2>Admin Dashboard</h2>
+      <button id="create-quiz-btn">Create Quiz</button>
+      <button id="view-results-btn">View Results</button>
+      <div id="admin-result"></div>
+    </div>
+
+    <div id="student-section" style="display:none;">
+      <h2>Student Dashboard</h2>
+      <button id="take-quiz-btn">Take Quiz</button>
+      <div id="student-result"></div>
+    </div>
+  </div>
+  <script src="jsscriptapp.js"></script>
+</body>
+</html>
