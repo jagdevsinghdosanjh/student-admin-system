@@ -18,7 +18,6 @@ app.use('/api/quizzes', quizRoutes);
 app.use('/api/students', studentRoutes);
 
 // Database Connection
-const dbURI = 'mongodb://localhost:27017/studAdminDb';
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-.then(() => app.listen(5000, () => console.log('Server running on port 5000')))
-.catch(err => console.error(err));
+mongoose.connect('your_mongodb_connection_string', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => app.listen(5000, () => console.log('Server running on port 5000')))
+  .catch(err => console.error(err));
